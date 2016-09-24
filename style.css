@@ -7,29 +7,50 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul {	list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: '';	content: none; } table { border-collapse: collapse;	border-spacing: 0; }
 
 /*main styles*/
-h1 h2 h3 h4 h5 h6 p { font-family: 'Lora-Regular', sans-serif; }
-h5 p { font-size: 16.8px; line-height: 21px; }
-h1 h3 { color: #272727; }
+h1, h2, h3, h4, h5, h6, p { font-family: 'Lora', sans-serif; }
+h5, p { font-size: 16.8px; line-height: 21px; }
+h1, h3 { color: #272727; }
 h1 { font-size: 38.4px; line-height: 46px; }
-h2 h3 { font-size: 28px; line-height: 34px; }
+h2, h3 { font-size: 28px; line-height: 34px; }
 h2 { color: #000; }
-h4 h6 { color: #232323; }
+h4, h6 { color: #232323; }
 h4 { font-size: 19.8px; line-height: 24px; }
-h5 h6 p { font-size: 16.8px; line-height: 21px; }
+h5, h6 p { font-size: 16.8px; line-height: 21px; }
 h5 { color: #fff; }
 p { color: #B6B6B6; }
 ul { list-style: none; }
+.no-wrap { flex-wrap: nowrap; }
+
+/*header*/
+
+/*main*/
+main {
+  margin: 50px;
+}
 
 /*footer*/
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.ftr {
+  width: 80%;
+  border-top: solid 1px #A9A9A9;
+}
+
 .nav-ftr {
-  font-family: 'OpenSans-Bold', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-size: 13.2px;
   color: #A9A9A9;
   line-height: 18px;
 }
-
-
-.nav-ftr li:hover {
-  border-bottom: 2px solid #74FDF2;
-  font-size: 13.8px;
-}
+  .nav-ftr li {
+    margin: 30px;
+  }
+  .nav-ftr li:hover {
+    font-size: 15.2px;
+    border-bottom: 4px solid #74FDF2;
+    cursor: pointer;
+  }
